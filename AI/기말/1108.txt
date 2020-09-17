@@ -1,0 +1,59 @@
+ch7 새로운 용어들이 많이 나온다.
+
+가장 키워드가 되는 것은 propositional logic!
+설명이 필요한 도메인- 실제로 설명이 필요한 것이 많다.
+
+Knowledge Base
+데이터베이스에 저장되어있는 데이터들은 보통 검색하기 위해서 사용한다. 정보를
+찾기 위해서. 엄청 많은 데이터에서 빨리 찾는 것이 중요.
+knowledge base도 이와 비슷, 정보는 fact 이 세상에 대한 fact이다.
+Inference engine(program), knowledge base(data)
+
+Tell: 정보를 저장한다.
+agent가 사람이라고 생각해서
+t는 time, percept는 새로운 정보
+
+PEAS description, Wumpus World
+
+냄새 바람 반짝임 벽 비명
+
+새로운 팩트를 어떻게 추론하는가!
+
+a= [1,2], print([3]) 이런거는 syntax는 맞지만 semantics가 아니다 runtime error
+semantics는 true false를 가린다.
+
+entail: 팩트를 가지고 있을때 그 팩트에 의해서 alpha도 사실이다.
+명제 같은거
+
+Models
+어떤 문장의 값들을 넣어서 가능한 세계
+
+KB |-i: 틀릴 수도 있는 문장.
+
+
+Propositional logic : syntax
+
+
+atomic sentence
+True, False 값을 가진다. 
+
+KB에서 알파를 추론할 수 있고, 알파가 트루이면 KB도 트루이다.
+
+p -> q : ~p or q
+
+
+Propositional logic : semantics
+
+
+모든게 True이면 Valid
+
+Inference by enumeration 코드는 없어도 되는 슬라이드. 신경쓰지 마라
+
+
+첫번째 추론법: 진리표를 그려서 증명하는 것. KB가 True일 때 valid인것처럼
+두번째: inference rule을 적용
+세번째: contradiction
+
+
+계속 지우다가 P와 not P가 생길때는 절대로 안된다는 뜻. 즉 모순
+이거 시험에 무조건 나온다.

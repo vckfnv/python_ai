@@ -1,0 +1,191 @@
+#1
+History and Agent
+AIMA
+전체적인 프로세스
+#2
+
+#3
+튜링 테스트~
+사람처럼 생각하고 행동한다
+이성적으로 생각하고 행동한다
+-->우리는 Acting artionally를 선택
+#4
+튜링 테스트
+(Imitation game)
+다시 결과가 나올지 장담X 사람이 바뀌고 평가가 바뀌고
+유진 구스트만
+14살의 이민자 소년이라고 하면 될 것 같긴 한데....흠
+
+#5
+60년대 이전은 그저 인간이 특별한 것..
+이후 뇌, information-processing psychology
+Cognitiive Science, Neuroscience로 바뀐
+
+#6
+감정에 의해서 결정을 한다거나 직관적으로 하는 결정들
+할 수 없다.
+#7
+합리적인 행동이 우리가 할 수 있는것
+행복을 최대화 하기위한~~
+
+#8
+rational agent? 컴퓨터라고 생각하자.
+컴퓨터가 아닌 형태가 될 수도 있다. 드론, 로봇 등
+사전적 정의: 대행자
+지각: 냄새 맡고 등등
+
+#9
+AI가 나오기 전...
+철학, 수학, 경제, ...
+
+#10
+1943 컴퓨터의 Circuit 뉴런과 유사하다
+신경망
+1956에 AI라는 말이 처음으로 나옴
+58 perceptron
+ELIZA 챗봇
+knowledge-based system: if~then 비가오면 우산쓰고
+
+#13
+1980 AI winter
+
+#14
+영상2개
+토론토, 몬트리올이 머신러닝 딥러닝으로 되게 핫해짐
+
+#16
+Agent
+#17
+환경을 perceive해서 온도, 습도 등등 측정기를 쓰던지
+actuator를 통해 action을 한다
+autonomous : 학습된 agent
+
+#21
+가장 successfull
+#22
+주어진것만 보고 할 줄 아는게 아니라 스스로 경험한 것을~
+정보를 탐색
+Rationality is distinct from omniscience
+
+#23
+PEAS
+#24
+PEAS예시
+
+#25
+환경이 얼마나 복잡한가? 환경의 특성
+fully observable ex: 바둑
+partially observable: 화투
+fully가 partially보다 쉽다
+
+deterministic 다음 상태가 정해져 있다.
+바둑 알 놓고나서 알 위치가 바뀌지 않는다
+stochastic: 다음 상태 모른다 로또처럼
+episodic 내가 무슨 일을 해도 다음번 액션에 영향X
+즉, 앞선 일들이 상관X
+sequential: 앞선 일이 상관있음.
+#27
+static dynamic 환경이 계속 바뀌는지 아닌지 static이 더쉽
+discrete continuous
+....
+kwnon unknown: 환경에 대해서 알고있는지 모르는지
+어떤 규칙이 있는지 알고있는지 모르느지
+이건 환경보다 agent에 달려있음.!
+
+#30
+#32
+real world는 대부분 no
+#33
+테이블 대신 다른 방식으로 할 것
+#34
+relfex, model based reflex 그냥 간단하게
+
+#35
+goal based
+달성하려는 목표에 도움이 되는 행동을 하는 것.
+반응형은 누가 축 치면 나오는건데
+얘는 의도적으로 뭘 해야겠다 이런거
+
+
+#37
+어떤 과정?
+###################
+
+
+Thonny!
+class, queu/stack, tree, node
+
+자료구조때 썼던 책:
+problem solving with algorithm ~~data structire and python
+
+3a
+initial state도 필요
+Root가 initial
+goal state로 가는 경로를 찾는 것이다.
+일반 알고리즘에서는 이미 트리가 있는 것에서 최단경로를
+찾는것
+그러나 AI는 경로가 없고 root만 있고,
+경로를 만들면서 찾아야한다.
+expansion: 자식노드만드는것
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+청소기라면 L,R,S 세가지 자식 노드로 expansion
+그리고 경로가 solution이 된다.
+
+
+problem: initial, goal, goal인지 확인하는,model(map),
+그 다음에 갈 수 있는 node확인하는 함수 등
+
+가지고 있는 정보가 하나가 아니면 class 해주자
+
+fringe leaf node children없는애들
+
+node를 class로,
+problem을 class로
+
+청소에서,
+node에는 state, action, cost, depth, parent
+problem은 
+우리는 parent를 따라서 올라가야한다.
+
+print할때 자동으로 찍힘 __str__
+
+node = Node('Arad', None, 0,0 )
+print(node)
+cnode = Node('Sibiu', node, 140, 1)
+print(cnode)
+
+딕셔너리, 튜플로 구현
+
+search strategies
+BFS breadth first search 한번 해봐라
+fringe를 큐로 만듬.
+같은 state가 반복되면 엄청나게 커진다.
+그래서 얘를 고려하지 않도록 이미 확장했던 애들은
+고려하지 않음
+
+프린트 제일 마지막 줄 7째
+
+
+
+
+
+
+
+

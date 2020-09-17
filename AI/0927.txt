@@ -1,0 +1,57 @@
+딕셔너리 방식으로 하면 찾기가 더 쉽다.
+()튜플: 값을 바꿀 수 없다. 튜플이 공간을 더 적게 사용 append remove 이런거 필요X
+
+만약 없는것을 찾는다면 에러가 뜨니까
+graph.get 함수 사용
+
+expand되어서 만들어진 자식노드들이 successors
+여기선 action은 없다!!! 그냥 가는 것. 로봇이라면 집는다, 어떤 특정행동을 안다 등등...
+여기선 state만 알면 됨.
+
+completeness
+- 트리에 있는 일부만 찾는다~ 전체 모든 노드를 찾는다~
+정답이 있으면 다 찾느냐! completeness
+
+time complexity
+- 시간 복잡도, 노드의 개수, 이 트리가 생성한 노드의 개수를 셀 것.
+
+space complexity
+- 공간 복잡도, 말 그대로 용량차지
+
+optimality
+- 최소 비용의 정답
+
+b: maximum branching
+d: depth, 0,1,2,...
+m: maximum depth of the state space
+may be infinity
+
+알고리즘과의 차이: 알고리즘에서는 이미 트리가 있지만 여기서는 
+트리를 만들면서 하는 것이니 오해하지 말 것.
+
+leaf node: 가장 마지막 자식
+
+노드에 이름, depth cost, parent정보가 있다.
+
+
+3a 7p, problem
+
+
+set()은 뭔가를 더 넣을 때 add를 사용
+BFS에서, self.visited = set() 이런 식
+
+재귀함수 써서 solutionpath
+
+없는애를 찾았다면 그거를 가지고 처리할 수 있는 부분도 필요하다~
+
+
+
+
+11 14 27 31
+
+
+
+
+
+
+

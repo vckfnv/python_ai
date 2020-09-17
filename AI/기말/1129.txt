@@ -1,0 +1,75 @@
+최초의 플래너 STRIPS
+스테이트를 표현할 수 있어야한다.
+FOL의 형태로 그리고 And로 엮여진 state
+이건 initial, goal state뿐만아니라
+current state도 표현할때도 똑같이 사용함
+
+이 플래너는 positive literal만 사용하도록 하게 고안되었다.
+
+literal: ground, function-free
+
+closed world assumption: 적어놓지 않은 센텐스는 false라고 assume
+
+p: airplane
+
+precondition: 이 조건이 true여야 실행할 수 있다.
+격투게임에서 필살기 같은것.
+
+effect: 이 액션이 실행되고 바뀌는 상태.바뀌는 것만 적으면 됨.
+
+negation사용하면 안된다면서 왜 사용..?
+precond에서는 negation의 literal을 사용할 수 없다.
+
+이해만 하면 1시간이면 할 수 있는 과제
+서로다른 액션 5개가 다 사용하도록 plan이 되도록
+
+5개 이상 상관없다
+
+air cargo transport example
+
+Cargo(C1) 이런건 type이라고 하는 것이다.
+type을 설정하지 않으면 cargo가 날라다닌다 이런게 될 수도.
+즉, 쓸모없는 서치를 하지 않도록
+
+solution = plan = action sequence
+
+?는 변수앞에 많이 붙인다.
+
+forward state-space search
+
+root node , initial state부터 시작한다.
+
+내가 만족시키지 못했던 골의 개수를 heuristic
+
+스토리로 만들면 추가점수 1점2점주겠다
+길이 한 20개는 되어야지
+
+마지막주는 시험에는 없지만 한 번 해볼것들 함
+
+type 안해도 된다
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

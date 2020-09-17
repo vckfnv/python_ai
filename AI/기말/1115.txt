@@ -1,0 +1,124 @@
+Review: 
+1. 표
+2. inference
+3. contradiction
+
+soundness : 추론한게 참이면 사운드
+completeness : 모래에 반지 10개 두고 다 찾으면 컴플리트
+valid : 항상 true
+
+FOL : 중요하다
+planning이 로봇이 커피를 타오라는 명령을 받으면 어떤어떤 행동을 하는데
+이 planner가 행동을 만들어주고 FOL이 여기서 중요.
+
+C: 철수가 서울 시민이다
+D: 철수가 서울에 산다
+E: 철수가 수원에 산다
+F: 철수가 수원 시민이다
+
+D → C
+E → F
+근데 둘이 비슷하다
+LiveInSeoul(영희)
+LiveInSuwon(철수)
+LiveIn(영희,서울)
+LiveIn(철수,수원)
+
+Predicate: 설명하는 말
+
+-----------------------------------------------
+표현력이 아주 제한된 Propositional Logic
+
+중요한 것은 object, relation
+object: 명사, 영희, 철수
+relation: 형용사, 전치사 이런거
+두개 간의 relation이 일반적이지만
+person이런거도 어떤 오브젝트가 사람이라는 정보를 주듯이 하나의
+오브젝트에 대한 설명도 가능.
+
+term에 function을 쓸 수도 있다.
+
+순서에 주의해야한다. sibling같은 건 괜찮지만.
+
+object를 리턴하는 func
+
+John , Richard 5개의 object
+
+At(crown, SKKU) => Smart(crown) 으로 고쳐야
+
+FOL로 다음문장을 표현하시오 라고 시험 나옴
+
+ Existential: or!! 논리합임
+
+헷갈리는 property:
+∀y∃xloves(x,y) : or조건
+∃x∀yloves(x,y) : x,y = p1,p2,p3 세상에 있는 모든 사람을 사랑하는 사람이 있다. y를 먼저 할당한 것. and조건
+
+C가 답이 된다.
+
+FOL example
+
+asdasd
+
+시험에 안나오지만 설명하자면 시간을 항상 생각해줘야한다.
+temporal? logic
+
+--------------------------------------------------------
+Inference in FOL
+앞부분이 만족하지 않으면 추론할 수 없다.
+
+변수가 없는 것을 ground term
+
+Unification
+x/John: x를 john으로 바꿈
+
+conversion to CNF
+변수가 있는 자리에 constant를 넣어서 proposition으로?
+
+conjuntive normal form
+
+
+
+constant : snoopy, charlie
+dog(x)
+own(x,y) : x owns y
+snoopy is a dog
+: dog(snoopy)
+
+charlie owns snoopy which is a dog
+: own(charlie, snoopy) and dog(snoopy)
+
+every dog is owned by someone
+: ∀x Own(someone, dog(x))
+*****∀x∃y Dog(x) → Own(y,x)
+
+pet(x)
+some dog is a pet
+*****∃x Dog(x) ∧ pet(x)
+
+Emily is either a surgeon or a lawyer
+
+Joe does not have a lawyer
+
+
+quatifier가 있는거로 시험문제낼 것.
+
+변수가 없는 애로 만드는 것.
+
+추론할때 얘만의 FOL이 이 아니라
+modes ponen 이런거 다 쓰는데 constant로 바꿔서 하는것.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

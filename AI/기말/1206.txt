@@ -1,0 +1,105 @@
+데이터분석 LG u+
+
+Forward state space search
+각각의 노드가 state를 가지고있는 것
+
+오늘 배울 것은 각각의 노드가 plan을 가지고 있는것
+
+total order plan
+partial order plan : 꼭 필요한 order에만 order을 준다
+
+toally ordered plan search
+decomposition의 장점을 살릴 수 없다.
+
+
+중요:
+state: 노드에 state가 들어가고
+partial: 노드에 plan이 들어간다
+
+
+partial order plan
+least commitment strategy
+
+
+이번에는 용어같은 건 별로 낼 생각이 없다.
+
+두개의 액션을 넣었을 때
+state space search에서는 1. 2. 3. 이랬는데
+
+
+
+
+parallel할 수 있다
+linearlization해야!
+partial을 직렬화 - total
+여기서는 알고리즘 시험에 안냄.
+(다른데서는 나오려나..?)
+
+POP에 루트에 plan이 들어감
+처음에는 빈 플랜을 넣었다가 점점 솔루션이 됨.
+
+node에 들어가는 planner: action이 있어야함, ordering이 있다
+
+ causal links
+
+solution: open precondition이 아무것도 없다.
+
+dummy actions called start and finish mark
+plan space에서 서치하려고 하는데 얘네를 더미로 놓으면 모두 action이 되는~~
+finish는 goal을 precon,
+start는 init의 state. effect로?
+
+tire에서
+puton이 들어가면  open precondition은 at(apre,axle)이 충족되었기때문에
+at(spare,ground), -at(flat,axle)이 된다.
+
+솔루션이 나오면 올라갈 필요없이 그게 솔루션
+
+threatening하고 있는 leaveovernight
+
+demotion, promotion
+
+순서를 앞뒤로...
+
+threat도 없고 open precondition도 없는게 솔루션
+다른애의 effect를 안되게 하고 있다~
+그럼 causual linkdml 앞에있는 애보다 앞에서 하거나
+뒤에있는 애보다 뒤에 하는 것.
+
+새로 들어온 액션은 start -> A -> Finish라는 order가..
+C가 A->B를 위협한다: A보다 먼저 혹은 B보다 나중에
+사이클이 만들어지면 안된다
+
+(잠시 화장실, 명륜길 ~8분30초)
+
+open precondition을 heuristic으로: admissible 하지 않다
+개런티를 할 수 업다
+
+graph plan부터: 시험에 안나옴
+
+hierarchical planning 시험 안나옴
+당장 실행할 수 없는 큰 액션, 어떻게 하면 실행할 수 있는지 다 적어놓음
+
+중요:
+state: 노드에 state가 들어가고
+partial: 노드에 plan이 들어간다
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

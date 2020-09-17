@@ -1,0 +1,17 @@
+시험문제 1. partial order plan 
+이런 플랜이 있는데 partial order plan은 어떤 형태가 나올지 그려라. 그래프
+2. propositional logic 증명
+3. FOL 얘가 가장 배점이 높음, 문장 만들기가 제일 중요
+all, exist에 주의해서. 증명은 어렵게는 안낼것.
+4.과제에서도 했던 것. ~~ task plan, action operator, schema
+plan domain을 만들어라
+
+교재나 노트 반입 가능
+교재를 지참할 수 있다고해서 와서 공부하지 마라
+공불 한 사람이 한시간동안 풀 수 있는 난이도
+
+다음주는 그냥 출석만 하고 가도 됨.
+
+시험은 쉽게 낼 것임.
+
+총 50점, 10 10 10 20

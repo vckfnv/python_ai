@@ -1,0 +1,50 @@
+Environment properties :
+-Fully observable(vs partially): 바둑 vs 화투
+  agent can accesss to the complete state of the environment
+at each point in time
+ agent가 환경의 정확한 상태에 매 순간 access할 수 있다
+
+-Deterministic(vs stochastic):
+ env의 다음 상태가 
+현재상태와 agent가 실행한 행동들에 의해 
+결정될 수 있는지
+
+-Episodic(vs sequential)
+action들에 결정되는 episode들에 영향을 받는지 아닌지
+
+Env typse:
+static , dynamic : env가 바뀌는지 아닌지
+
+discrete , continuous : 제한되고 명확히 정의된 행동이나
+관점
+
+single agent, multiagent : agent가 몇개나 operating
+
+known, unknown: agent가 env에대해 얼마나 알고 있는지
+observable? yes no 
+deterministic? yes partly
+epicsodic? no no
+static?yes yes semi
+discrete? yes yes
+single-agent? yes yes
+real- world: partially observable, stochastic, sequential,
+dynamic,continuous, multi-agent
+
+4-agent types:
+simple reflex(반사작용), model based reflex,
+goal based, utility based
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
